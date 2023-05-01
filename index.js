@@ -54,4 +54,4 @@ server.on('request', (req, res) => {
     }
 });
 
-server.listen(5000, () => console.log('Server is serving now on port 5000!\n' + apis));
+server.listen(5000, () => console.log('Server is serving now on port 5000!\n'));
