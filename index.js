@@ -1,7 +1,9 @@
 var customers = require('./customers.json');
 var orders = require('./orders.json');
 var express = require('express');
-var app = express();
+const cors = require('cors');
+const app = express();
+app.use(cors())
 
 var writeJsonResponse = function(res, str) {
   res.writeHead(200, { 'Content-Type': 'application/json' });
